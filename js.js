@@ -50,4 +50,21 @@ document.addEventListener("keydown", function(key)
         document.body.appendChild(pTag);
     }
 
+    if (key.keyCode === 68)
+    {
+
+        var J1 = prompt('one num plees?!?!?!?!');
+        var J2 = prompt('two num plees?!?!?!?!');
+        var J3 = prompt('Three num plees?!?!?!?!');
+        var J4 = prompt('Four num plees?!?!?!?!');
+        var J5 = prompt('Five num plees?!?!?!?!');
+
+        var pTag = document.createElement("p");
+        var text = "the bigg number is: " + Math.max(J1, J2, J3, J4, J5);
+        var textNode = document.createTextNode(text);
+        pTag.appendChild(textNode);
+        document.body.appendChild(pTag);
+
+    }
+
 });
